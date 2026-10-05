@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mustafa Shoukat | Senior AI / Software Engineer</title>
+<meta name="description" content="Mustafa Shoukat, Senior AI / Software Engineer. Agentic AI, RAG systems, and full-stack SaaS. Arabic-first AI specialist." />
+<meta property="og:title" content="Mustafa Shoukat | Senior AI / Software Engineer" />
+<meta property="og:description" content="Production agentic-AI, RAG systems, and full-stack SaaS. 6 years experience." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #0a0e1a;
+    --bg-soft: #0f1525;
+    --card: #131a2c;
+    --card-hover: #18203a;
+    --border: #1f2940;
+    --text: #e6ebf5;
+    --muted: #93a0bd;
+    --faint: #5e6b87;
+    --accent: #3b82f6;
+    --accent2: #22d3ee;
+    --accent3: #a855f7;
+    --green: #22c55e;
+    --shadow: 0 10px 40px rgba(0,0,0,0.4);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  body::before {
+    content: "";
+    position: fixed; inset: 0;
+    background:
+      radial-gradient(800px circle at 15% 5%, rgba(59,130,246,0.12), transparent 50%),
+      radial-gradient(700px circle at 85% 15%, rgba(168,85,247,0.10), transparent 50%),
+      radial-gradient(900px circle at 50% 100%, rgba(34,211,238,0.07), transparent 50%);
+    z-index: -1;
+  }
+  a { color: inherit; text-decoration: none; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+
+  /* Nav */
+  nav {
+    position: sticky; top: 0; z-index: 50;
+    backdrop-filter: blur(12px);
+    background: rgba(10,14,26,0.7);
+    border-bottom: 1px solid var(--border);
+  }
+  nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .brand { font-weight: 800; font-size: 18px; letter-spacing: -0.3px; }
+  .brand span { color: var(--accent2); }
+  .nav-links { display: flex; gap: 28px; }
+  .nav-links a { color: var(--muted); font-size: 14px; font-weight: 500; transition: color .2s; }
+  .nav-links a:hover { color: var(--text); }
+  @media (max-width: 720px) { .nav-links { display: none; } }
+
+  /* Hero */
+  header { padding: 90px 0 70px; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(34,197,94,0.1); border: 1px solid rgba(34,197,94,0.3);
+    color: var(--green); font-size: 13px; font-weight: 600;
+    padding: 6px 14px; border-radius: 100px; margin-bottom: 24px;
+  }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--green); box-shadow: 0 0 8px var(--green); }
+  h1 {
+    font-size: clamp(38px, 6vw, 64px); font-weight: 900;
+    letter-spacing: -1.5px; line-height: 1.05; margin-bottom: 18px;
+  }
+  .grad {
+    background: linear-gradient(120deg, var(--accent2), var(--accent), var(--accent3));
+    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .role { font-size: clamp(18px, 2.5vw, 24px); color: var(--muted); font-weight: 500; margin-bottom: 22px; }
+  .lead { font-size: 18px; color: var(--muted); max-width: 640px; margin-bottom: 36px; }
+  .lead strong { color: var(--text); font-weight: 600; }
+
+  /* Buttons */
+  .cta { display: flex; flex-wrap: wrap; gap: 12px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 9px;
+    padding: 13px 22px; border-radius: 12px; font-weight: 600; font-size: 15px;
+    transition: transform .15s, box-shadow .2s, background .2s; border: 1px solid transparent;
+  }
+  .btn:hover { transform: translateY(-2px); }
+  .btn-primary {
+    background: linear-gradient(120deg, var(--accent), var(--accent3));
+    color: #fff; box-shadow: 0 8px 24px rgba(59,130,246,0.35);
+  }
+  .btn-primary:hover { box-shadow: 0 12px 32px rgba(59,130,246,0.5); }
+  .btn-ghost { background: var(--card); border-color: var(--border); color: var(--text); }
+  .btn-ghost:hover { background: var(--card-hover); border-color: var(--accent); }
+  .btn svg { width: 18px; height: 18px; }
+
+  /* Stats */
+  .stats { display: flex; gap: 40px; margin-top: 54px; flex-wrap: wrap; }
+  .stat .num { font-size: 30px; font-weight: 800; color: var(--text); }
+  .stat .num span { color: var(--accent2); }
+  .stat .lbl { font-size: 13px; color: var(--faint); font-weight: 500; }
+
+  /* Sections */
+  section { padding: 60px 0; }
+  .sec-head { margin-bottom: 40px; }
+  .sec-tag { color: var(--accent2); font-weight: 600; font-size: 14px; letter-spacing: 1px; text-transform: uppercase; }
+  .sec-head h2 { font-size: clamp(28px, 4vw, 40px); font-weight: 800; letter-spacing: -1px; margin-top: 8px; }
+  .sec-head p { color: var(--muted); margin-top: 10px; max-width: 600px; }
+
+  /* Skills */
+  .skill-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
+  .skill-card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 24px; transition: border .2s, transform .2s; }
+  .skill-card:hover { border-color: var(--accent); transform: translateY(-3px); }
+  .skill-card h3 { font-size: 16px; margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+  .skill-card .ico { font-size: 20px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip { background: var(--bg-soft); border: 1px solid var(--border); color: var(--muted); font-size: 12.5px; font-weight: 500; padding: 5px 11px; border-radius: 8px; }
+  .chip.mono { font-family: 'JetBrains Mono', monospace; font-size: 12px; }
+
+  /* Projects */
+  .proj-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 22px; }
+  .proj {
+    background: var(--card); border: 1px solid var(--border); border-radius: 18px;
+    padding: 26px; display: flex; flex-direction: column; transition: transform .2s, border .2s, box-shadow .2s;
+    position: relative; overflow: hidden;
+  }
+  .proj::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--accent2), var(--accent3)); opacity: 0; transition: opacity .2s; }
+  .proj:hover { transform: translateY(-4px); border-color: var(--accent); box-shadow: var(--shadow); }
+  .proj:hover::before { opacity: 1; }
+  .proj-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 14px; gap: 12px; }
+  .proj-cat { font-size: 12px; font-weight: 600; color: var(--accent2); text-transform: uppercase; letter-spacing: 0.5px; }
+  .proj-stars { font-size: 13px; color: #fbbf24; font-weight: 600; white-space: nowrap; }
+  .proj h3 { font-size: 19px; font-weight: 700; margin-bottom: 10px; letter-spacing: -0.3px; }
+  .proj p { font-size: 14.5px; color: var(--muted); flex-grow: 1; margin-bottom: 16px; }
+  .proj-tech { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 18px; }
+  .proj-tech .chip { font-size: 11.5px; padding: 4px 9px; }
+  .proj-links { display: flex; gap: 10px; }
+  .proj-links a { font-size: 14px; font-weight: 600; color: var(--accent); display: inline-flex; align-items: center; gap: 6px; transition: gap .2s; }
+  .proj-links a:hover { gap: 9px; }
+  .rating { font-size: 12px; color: var(--faint); }
+
+  /* Contact */
+  .contact-box {
+    background: linear-gradient(135deg, var(--card), var(--bg-soft));
+    border: 1px solid var(--border); border-radius: 24px; padding: 56px 40px; text-align: center;
+  }
+  .contact-box h2 { font-size: clamp(28px, 4vw, 40px); font-weight: 800; letter-spacing: -1px; margin-bottom: 14px; }
+  .contact-box p { color: var(--muted); max-width: 520px; margin: 0 auto 30px; font-size: 17px; }
+
+  footer { border-top: 1px solid var(--border); padding: 36px 0; text-align: center; color: var(--faint); font-size: 14px; }
+  footer .social { display: flex; justify-content: center; gap: 22px; margin-bottom: 16px; }
+  footer .social a { color: var(--muted); transition: color .2s; }
+  footer .social a:hover { color: var(--accent2); }
+  footer .social svg { width: 22px; height: 22px; }
+
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+    html { scroll-behavior: auto; }
+  }
+</style>
+<noscript><style>.reveal { opacity: 1; transform: none; }</style></noscript>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="brand">Mustafa<span>.</span>Shoukat</div>
+    <div class="nav-links">
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="https://github.com/Mustafa-Shoukat1" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap">
+    <div class="badge"><span class="dot"></span> Available for AI / full-stack engineering work</div>
+    <h1>Mustafa Shoukat<br /><span class="grad">Senior AI / Software Engineer</span></h1>
+    <p class="role">Agentic AI · RAG Systems · Full-Stack SaaS · Arabic-First AI</p>
+    <p class="lead">
+      I build <strong>production agentic-AI, retrieval-augmented systems, and full-stack platforms</strong>,
+      from multi-agent research engines to local-first desktop apps. 6 years turning hard AI problems
+      into shipped products.
+    </p>
+    <div class="cta">
+      <a class="btn btn-primary" href="#projects">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h7v8l10-12h-7z"/></svg>
+        View My Projects
+      </a>
+      <a class="btn btn-ghost" href="https://github.com/Mustafa-Shoukat1" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17 4.6 18 4.9 18 4.9c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+        GitHub
+      </a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/mustafashoukat" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.3a1.7 1.7 0 110-3.5 1.7 1.7 0 010 3.5zM19 19h-3v-4.7c0-1.1 0-2.5-1.5-2.5S13 13 13 14.2V19h-3v-9h2.9v1.2h.04A3.2 3.2 0 0116 9.6c3 0 3.5 2 3.5 4.6z"/></svg>
+        LinkedIn
+      </a>
+      <a class="btn btn-ghost" href="Mustafa_Shoukat_AI_Engineer_Resume.pdf" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg>
+        Resume
+      </a>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><div class="num">6</div><div class="lbl">Years Experience</div></div>
+      <div class="stat"><div class="num">76<span>+</span></div><div class="lbl">Public Repos</div></div>
+      <div class="stat"><div class="num">6</div><div class="lbl">Featured Projects</div></div>
+      <div class="stat"><div class="num">AI<span>·</span>RAG</div><div class="lbl">Core Specialty</div></div>
+    </div>
+  </div>
+</header>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-tag">// Toolbox</div>
+      <h2>Skills &amp; Stack</h2>
+      <p>The technologies I use to take AI systems from prototype to production.</p>
+    </div>
+    <div class="skill-grid">
+      <div class="skill-card reveal">
+        <h3><span class="ico">🤖</span> Agentic AI &amp; LLMs</h3>
+        <div class="chips">
+          <span class="chip">LangChain</span><span class="chip">LangGraph</span><span class="chip">CrewAI</span>
+          <span class="chip">Phidata</span><span class="chip">OpenAI</span><span class="chip">Gemini</span>
+          <span class="chip">LLaMA</span><span class="chip">Ollama</span><span class="chip">RAG</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h3><span class="ico">🧠</span> ML / Deep Learning</h3>
+        <div class="chips">
+          <span class="chip">HF Transformers</span><span class="chip">PEFT</span><span class="chip">QLoRA</span>
+          <span class="chip">ORPO</span><span class="chip">TRL</span><span class="chip">Whisper</span>
+          <span class="chip">LLaVA</span><span class="chip">PyTorch</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h3><span class="ico">🗄️</span> Vector &amp; Data</h3>
+        <div class="chips">
+          <span class="chip">Qdrant</span><span class="chip">Milvus</span><span class="chip">Chroma</span>
+          <span class="chip">FAISS</span><span class="chip">pgvector</span><span class="chip">LanceDB</span>
+          <span class="chip">PostgreSQL</span><span class="chip">MongoDB</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h3><span class="ico">⚙️</span> Backend</h3>
+        <div class="chips">
+          <span class="chip">Python</span><span class="chip">FastAPI</span><span class="chip">Flask</span>
+          <span class="chip">SQLAlchemy</span><span class="chip">Pydantic</span><span class="chip">Axum</span>
+          <span class="chip">Rust</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h3><span class="ico">🎨</span> Frontend &amp; Desktop</h3>
+        <div class="chips">
+          <span class="chip">TypeScript</span><span class="chip">Next.js</span><span class="chip">React 19</span>
+          <span class="chip">Tailwind</span><span class="chip">Tauri</span><span class="chip">TanStack</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h3><span class="ico">☁️</span> DevOps &amp; Infra</h3>
+        <div class="chips">
+          <span class="chip">Docker</span><span class="chip">AWS</span><span class="chip">CI/CD</span>
+          <span class="chip">Playwright</span><span class="chip">Vitest</span><span class="chip">Twilio</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-tag">// Selected Work</div>
+      <h2>Featured Projects</h2>
+      <p>Six public repositories: three applications, one retrieval demo and two notebook series, spanning agentic AI, full-stack platforms, and ML research. My strongest production systems live in private client repos and are described on request.</p>
+    </div>
+    <div class="proj-grid">
+
+      <article class="proj reveal">
+        <div class="proj-top"><span class="proj-cat">Agentic AI / RAG</span><span class="proj-stars">★ 10</span></div>
+        <h3>Autonomous HybridRAG AI Agent</h3>
+        <p>A demo agent that grounds answers by cascading through long-term memory, a pgvector knowledge base, in-context data, and live web search, wired to both OpenAI and local Ollama models.</p>
+        <div class="proj-tech"><span class="chip mono">Python</span><span class="chip mono">Phidata</span><span class="chip mono">pgvector</span><span class="chip mono">Ollama</span><span class="chip mono">PostgreSQL</span></div>
+        <div class="proj-links"><a href="https://github.com/Mustafa-Shoukat1/Autonomous-HybridRAG-AI-Agent" target="_blank" rel="noopener">View Repo →</a></div>
+      </article>
+
+      <article class="proj reveal">
+        <div class="proj-top"><span class="proj-cat">Full-Stack Platform</span></div>
+        <h3>CodAgentic CRM-OMS</h3>
+        <p>A cross-platform CRM/operations system for field-service businesses (leads, jobs, estimates, invoicing) with an automated pipeline that scrapes Yelp/Google Places and drives Twilio + email outreach.</p>
+        <div class="proj-tech"><span class="chip mono">Next.js 15</span><span class="chip mono">FastAPI</span><span class="chip mono">SQLAlchemy</span><span class="chip mono">Twilio</span><span class="chip mono">TypeScript</span></div>
+        <div class="proj-links"><a href="https://github.com/Mustafa-Shoukat1/CodAgentic-CRM-OMS" target="_blank" rel="noopener">View Repo →</a></div>
+      </article>
+
+      <article class="proj reveal">
+        <div class="proj-top"><span class="proj-cat">Fintech / Desktop</span></div>
+        <h3>InvestWise Desktop</h3>
+        <p>A privacy-first, local-first desktop investment tracker built on a Tauri + Rust core with a React 19 frontend, an Axum backend over SQLite/Diesel, and an extensible addon SDK. Zero cloud dependency.</p>
+        <div class="proj-tech"><span class="chip mono">Tauri</span><span class="chip mono">Rust</span><span class="chip mono">React 19</span><span class="chip mono">Diesel</span><span class="chip mono">SQLite</span></div>
+        <div class="proj-links"><a href="https://github.com/Mustafa-Shoukat1/InvestWise-Desktop-OS-" target="_blank" rel="noopener">View Repo →</a></div>
+      </article>
+
+      <article class="proj reveal">
+        <div class="proj-top"><span class="proj-cat">Agentic AI / RAG</span></div>
+        <h3>Patent Search Tool</h3>
+        <p>A CrewAI multi-agent research platform where six role-specialized agents automate patent, academic, market, and competitor research, synthesizing raw findings into strategic opportunity spaces.</p>
+        <div class="proj-tech"><span class="chip mono">CrewAI</span><span class="chip mono">GPT-4o</span><span class="chip mono">Flask</span><span class="chip mono">MongoDB</span><span class="chip mono">React</span></div>
+        <div class="proj-links"><a href="https://github.com/Mustafa-Shoukat1/Patent-Search-Tool" target="_blank" rel="noopener">View Repo →</a></div>
+      </article>
+
+      <article class="proj reveal">
+        <div class="proj-top"><span class="proj-cat">ML / Deep Learning</span><span class="proj-stars">★ 3</span></div>
+        <h3>Fine-Tuning with QLoRA / ORPO</h3>
+        <p>A hands-on notebook series on parameter-efficient LLM fine-tuning: QLoRA 4-bit tuning and ORPO reference-free preference alignment on LLaMA 3, plus LoRA on LLaMA 2 and Gemma.</p>
+        <div class="proj-tech"><span class="chip mono">PEFT</span><span class="chip mono">QLoRA</span><span class="chip mono">ORPO</span><span class="chip mono">LLaMA-3</span><span class="chip mono">Transformers</span></div>
+        <div class="proj-links"><a href="https://github.com/Mustafa-Shoukat1/-Fine-Tuning-and-PEFT-with-QLoRA-on-LLaMA-3-" target="_blank" rel="noopener">View Repo →</a></div>
+      </article>
+
+      <article class="proj reveal">
+        <div class="proj-top"><span class="proj-cat">ML / Deep Learning</span></div>
+        <h3>Multimodal RAG: Chat with Videos</h3>
+        <p>A notebook proof of concept for chatting with video: it fuses Whisper transcription, LLaVA vision-language understanding, and BridgeTower cross-modal embeddings into a LanceDB retrieval flow.</p>
+        <div class="proj-tech"><span class="chip mono">Whisper</span><span class="chip mono">LLaVA</span><span class="chip mono">BridgeTower</span><span class="chip mono">LanceDB</span><span class="chip mono">LangChain</span></div>
+        <div class="proj-links"><a href="https://github.com/Mustafa-Shoukat1/Multimodal-RAG-Pipeline-Chat-with-Videos" target="_blank" rel="noopener">View Repo →</a></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-box reveal">
+      <h2>Let's build something intelligent.</h2>
+      <p>Open to senior AI engineering roles, consulting, and ambitious RAG / agentic-AI projects. Let's talk.</p>
+      <div class="cta" style="justify-content:center">
+        <a class="btn btn-primary" href="mailto:mustafashoukat.ai@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M4 6l8 6 8-6"/></svg>
+          Get in Touch
+        </a>
+        <a class="btn btn-ghost" href="https://github.com/Mustafa-Shoukat1" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/mustafashoukat" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="social">
+      <a href="https://github.com/Mustafa-Shoukat1" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17 4.6 18 4.9 18 4.9c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/mustafashoukat" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.3a1.7 1.7 0 110-3.5 1.7 1.7 0 010 3.5zM19 19h-3v-4.7c0-1.1 0-2.5-1.5-2.5S13 13 13 14.2V19h-3v-9h2.9v1.2h.04A3.2 3.2 0 0116 9.6c3 0 3.5 2 3.5 4.6z"/></svg>
+      </a>
+    </div>
+    <div>© 2026 Mustafa Shoukat · Senior AI / Software Engineer</div>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach((el, i) => { el.style.transitionDelay = (i % 6 * 60) + 'ms'; io.observe(el); });
+</script>
+</body>
+</html>
