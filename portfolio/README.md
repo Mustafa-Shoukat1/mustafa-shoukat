@@ -1,19 +1,10 @@
 # Mustafa Shoukat | Portfolio
 
+🌐 **Site:** not yet published.
+
 Senior AI / Software Engineer. Agentic AI · RAG Systems · Full-Stack SaaS · Arabic-First AI.
 
-## What is here
-| Folder | Contents |
-|--------|----------|
-| [portfolio/](portfolio/) | Portfolio website (single-page, static) and resume PDF |
-| [01 - Profile & Resume/](01%20-%20Profile%20%26%20Resume/) | Resumes, project write-ups and the scripts that build the PDFs |
-| [02 - Business & Agency/](02%20-%20Business%20%26%20Agency/) | Agency plan and notes |
-| [03 - Market Research/](03%20-%20Market%20Research/) | AI job market research |
-| [04 - Learning & Skills/](04%20-%20Learning%20%26%20Skills/) | Learning roadmap |
-| [05 - Proposals & Client Docs/](05%20-%20Proposals%20%26%20Client%20Docs/) | Reusable proposal, rate card and capability sheet |
-| [06 - Job Applications/](06%20-%20Job%20Applications/) | Application documents and the scripts that build them |
-| [reports/](reports/) and [research_notes/](research_notes/) | Market scans and the notes behind them |
-| [.github/prompts/](.github/prompts/) | Prompt library for agentic coding |
+This is the source of my portfolio website (single-page, static) and my resume.
 
 ## Featured Projects
 | Project | Category | Stack |
@@ -26,4 +17,7 @@ Senior AI / Software Engineer. Agentic AI · RAG Systems · Full-Stack SaaS · A
 | [Multimodal RAG (Chat-with-Video)](https://github.com/Mustafa-Shoukat1/Multimodal-RAG-Pipeline-Chat-with-Videos) | ML / Deep Learning | Whisper · LLaVA · BridgeTower · LanceDB |
 
 ## Resume
-[Mustafa_Shoukat_AI_Engineer_Resume.pdf](portfolio/Mustafa_Shoukat_AI_Engineer_Resume.pdf)
+[Mustafa_Shoukat_AI_Engineer_Resume.pdf](Mustafa_Shoukat_AI_Engineer_Resume.pdf)
+
+## Run locally
+Just open `index.html` in a browser — no build step.

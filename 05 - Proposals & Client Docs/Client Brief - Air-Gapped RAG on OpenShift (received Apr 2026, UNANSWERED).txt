@@ -1,0 +1,31 @@
+We are planning to implement a Retrieval-Augmented Generation (RAG) system deployed on-premises. Below are the crucial details:
+
+Environment:
+- Deployment on an existing OpenShift cluster with GPU acceleration.
+- Strictly air-gapped connectivity (no outbound internet access).
+
+Software Stack:
+- 100% open-source components with no licensing fees or external APIs.
+
+Performance & Capacity:
+- Concurrency support for 5 to 15 concurrent user sessions.
+- Total latency: The system must return a complete response via API within 3 to 5 seconds.
+
+Data Intelligence & Security:
+
+- Organizational RBAC: Implement metadata filtering to ensure data isolation between departments. Users should only retrieve information authorized for their department tag.
+
+- Hybrid Search: Implement vector and keyword search for high accuracy in Arabic and English queries.
+- Contextual Accuracy: Ensure high-quality responses tailored to the Saudi/Gulf business context with optimized Arabic processing for Modern Standard Arabic and Saudi/Gulf business terms.
+- Optional: Light fine-tuning or prompt engineering to improve response accuracy in Arabic and the local business context.
+- Data Privacy: Ensure full data isolation with no external training or data leakage.
+
+Technical Requirements:
+- Inference Optimization: Utilize an optimized engine (like vLLM) to maximize GPU efficiency and reduce operational costs.
+- API Integration: Provide a robust REST API for seamless integration with the company's internal chat system.
+- Source Citation: Every response must cite the specific source document used.
+- Stable Re-indexing: Support updating the document library without system downtime.
+
+Expected Deliverables:
+- Proposed System Architecture: Detailed diagram of the on-premise components.
+- Estimated Cost: Focus on implementation, professional services, and support (since HW/SW are open-source/available).

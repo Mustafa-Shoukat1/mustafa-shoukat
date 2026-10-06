@@ -1,0 +1,43 @@
+- System Architecture Document
+- MVP Tech Document
+- Product Requirements Document (PRD)
+- Production Requirements Document
+- System Design Document (SDD)
+- System Scope Definition
+- User Stories
+- Acceptance Criteria
+- Information Architecture (IA)
+- Database Schema Document
+- API Contracts Specification
+- Mono-repo Structure Document
+- Scoring Engine Specification
+- Development Phase Plan
+- Environment Strategy Document
+- DevOps Strategy Document
+- Testing Strategy and Plan
+- Full user journey testing.
+- Development and Deployment Strategy 
+- User Journey and Experience Document (UX Journey)
+
+
+
+- System Operations Manual
+- End to End Operations Document
+- Production Operations Requirements (POR)
+- Production Runbook Document
+- System Operations Design Document (ODD)
+- Production Scope Definition
+- Operational Procedures
+- Release Acceptance Criteria
+- Production Information Architecture (PIA)
+- Database Operations & Maintenance Document
+- API Operations & Monitoring Specification
+- Mono-repo Deployment Structure Document
+- Scoring Engine Operations Specification
+- Production Phase Rollout Plan
+- Production Environment Strategy Document
+- DevOps Operations Strategy Document
+- Production Testing Strategy and Plan
+- Full Production User Journey Validation
+- Production Deployment and Release Strategy
+- Production User Journey and Experience Document (UX Ops Journey)
