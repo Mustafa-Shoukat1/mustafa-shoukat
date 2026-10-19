@@ -1,5 +1,9 @@
 # Mustafa Shoukat | Senior AI, ML & Software Engineer
 
+> **Description:** Mustafa Shoukat | Senior AI, ML & Software Engineer (Riyadh, Saudi Arabia) - Arabic NLP, Enterprise RAG (ByanRAG 2.2), LLM Post-Training (Yehia-7B GRPO), Multi-Agent Systems, Portfolio & Resume
+>
+> **Topics:** `mustafa-shoukat` · `ai-engineer` · `machine-learning-engineer` · `arabic-nlp` · `rag` · `llm` · `pytorch` · `huggingface` · `fastapi` · `qdrant` · `langchain` · `langgraph` · `riyadh` · `saudi-arabia` · `portfolio`
+
 **Mustafa Shoukat** is a Senior AI, Machine Learning, and Software Engineer based in **Riyadh, Saudi Arabia**, with **6+ years of experience** designing, training, and shipping production **Arabic NLP systems**, **enterprise RAG platforms**, **LLM fine-tuning and RL reward pipelines**, **multi-agent architectures**, and **full-stack AI SaaS applications**.
 
 He currently serves as **AI Engineer at Navid (Navid-Watad Group)** in Riyadh, where he leads the architecture, retrieval, and evaluation of self-hosted Arabic-first enterprise AI systems for GCC organizations. Previously at **Watad Energy & Communications**, he was the lead engineer and primary contributor (560+ commits) on **ByanRAG 2.2**, a production multi-tenant Arabic and English document intelligence platform, and designed the **LLM-as-judge reward pipeline (3C3H metric)** used for **GRPO post-training of Yehia-7B**, which ranked **#1 on the AraGen leaderboard** (0.5B to 25B parameter models, February 2025).
