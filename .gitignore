@@ -17,3 +17,21 @@ node_modules/
 # OS / editor
 .DS_Store
 Thumbs.db
+
+# Personal details: never publish (kept out of the public repo on 7 Oct 2026)
+/01 - Profile & Resume/Full-Profile.md
+/01 - Profile & Resume/DECISIONS NEEDED (fill before regenerating resumes).md
+/01 - Profile & Resume/LinkedIn - Specialist Profile (draft, 8 Sep 2026).md
+/02 - Business & Agency/Fiverr Briefs Analysis (Sep 2025 - Sep 2026).md
+/03 - Market Research/Position vs Market (Sep 2026).md
+/03 - Market Research/LinkedIn Profile Audit (8 Sep 2026, live profile read).pdf
+/05 - Proposals & Client Docs/2026-03-05 Local AI Assistant Proposal - R. Raju (Mac).pdf
+/06 - Job Applications/**/01 - Recruiter Emails/
+/06 - Job Applications/**/02 - Job Description/
+/06 - Job Applications/**/CONTEXT.md
+/09 - Audits/
+/Send to Kirsten - Teradata/
+/research_notes/Next business beyond agency work/internal_evidence.md
+/leads projects
+*.zip
+*.bundle
